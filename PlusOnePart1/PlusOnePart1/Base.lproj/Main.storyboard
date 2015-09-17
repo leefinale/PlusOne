@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" id="vXZ-lx-hvc" customClass="MenuViewController" customModule="PlusOnePart1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nqW-fn-THf">
+                                <rect key="frame" x="15" y="35" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nqW-fn-THf" secondAttribute="height" multiplier="1:1" id="cLh-49-1CJ"/>
+                                    <constraint firstAttribute="width" constant="100" id="qek-UD-sWx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elex Lee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKS-Kr-rUG">
+                                <rect key="frame" x="183" y="35" width="77" height="23"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="elexlee@gmail.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NF6-nT-vvZ">
+                                <rect key="frame" x="165" y="58" width="95" height="13"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 photos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAP-OR-k2p">
+                                <rect key="frame" x="202" y="106" width="58" height="14.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300 faves" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naQ-yU-SjI">
+                                <rect key="frame" x="210" y="120" width="50" height="14.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nqW-fn-THf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="15" id="4EF-aQ-anV"/>
+                            <constraint firstItem="NF6-nT-vvZ" firstAttribute="top" secondItem="RKS-Kr-rUG" secondAttribute="bottom" id="IDL-b6-CKv"/>
+                            <constraint firstItem="naQ-yU-SjI" firstAttribute="top" secondItem="nAP-OR-k2p" secondAttribute="bottom" id="LjF-Oc-K3c"/>
+                            <constraint firstItem="RKS-Kr-rUG" firstAttribute="trailing" secondItem="nAP-OR-k2p" secondAttribute="trailing" id="N9K-Hm-RUx"/>
+                            <constraint firstAttribute="trailing" secondItem="RKS-Kr-rUG" secondAttribute="trailing" constant="60" id="P3m-9T-qVu"/>
+                            <constraint firstItem="RKS-Kr-rUG" firstAttribute="trailing" secondItem="naQ-yU-SjI" secondAttribute="trailing" id="Rzk-s4-TIy"/>
+                            <constraint firstItem="RKS-Kr-rUG" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="35" id="Yxe-Aq-vbN"/>
+                            <constraint firstItem="RKS-Kr-rUG" firstAttribute="trailing" secondItem="NF6-nT-vvZ" secondAttribute="trailing" id="cIW-Wj-sMK"/>
+                            <constraint firstItem="nqW-fn-THf" firstAttribute="bottom" secondItem="naQ-yU-SjI" secondAttribute="bottom" id="cro-tA-YlN"/>
+                            <constraint firstItem="nqW-fn-THf" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="35" id="sVJ-24-F1q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="profileImageView" destination="nqW-fn-THf" id="xUE-fp-P3H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162.66666666666666" y="338.90666666666664"/>
+        </scene>
+        <!--Selection View Controller-->
+        <scene sceneID="qzu-Hg-Olk">
+            <objects>
+                <viewController storyboardIdentifier="SelectionViewController" id="ZEF-pi-IIf" customClass="SelectionViewController" customModule="PlusOnePart1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lrT-38-rit"/>
+                        <viewControllerLayoutGuide type="bottom" id="UTf-fP-pke"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fc1-qW-Ujn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WAH-yX-O4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="525" y="338"/>
+        </scene>
+    </scenes>
+</document>
